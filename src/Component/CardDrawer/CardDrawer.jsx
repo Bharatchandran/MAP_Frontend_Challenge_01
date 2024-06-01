@@ -8,15 +8,23 @@ function CardDrawer() {
 
   const scrollLeft = () => {
     if (containerRef.current) {
-      const subContainerWidth = containerRef.current.children[0].offsetWidth +16; // Assuming all sub-containers have the same width
-      containerRef.current.scrollLeft -= subContainerWidth; // Scroll one sub-container width to the left
+      const subContainerWidth = (containerRef.current.children[0].offsetWidth +16 )* 5; // Assuming all sub-containers have the same width
+    //   containerRef.current.scrollLeft -= subContainerWidth; // Scroll one sub-container width to the left
+      containerRef.current.scrollBy({
+        left: -subContainerWidth,
+        behavior: 'smooth'
+      });
     }
   };
 
   const scrollRight = () => {
     if (containerRef.current) {
-      const subContainerWidth = containerRef.current.children[0].offsetWidth +16; // Assuming all sub-containers have the same width
-      containerRef.current.scrollLeft += subContainerWidth;
+      const subContainerWidth = (containerRef.current.children[0].offsetWidth +16 )* 5; // Assuming all sub-containers have the same width
+    //   containerRef.current.scrollLeft += subContainerWidth;
+    containerRef.current.scrollBy({
+        left: subContainerWidth,
+        behavior: 'smooth'
+      });
     }
   };
   return (
