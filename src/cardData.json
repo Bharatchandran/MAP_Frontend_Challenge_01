@@ -1,0 +1,129 @@
+[
+    {
+      "id": 1,
+      "title": "Sample Title 01",
+      "description": "This is a description for SamplePic01. loremsdfa fasdfdsa fsd af asdf sad fdsf sad f asd fds f sadf asdfsadfsad fsd f sdf sdfsadfasd ffsThis is a description for SamplePic01. loremsdfa fasdfdsa fsd af asdf sad fdsf sad f asd fds f sadf asdfsadfsad fsd f sdf sdfsadfasd ffsThis is a description for SamplePic01. loremsdfa fasdfdsa fsd af asdf sad fdsf sad f asd fds f sadf asdfsadfsad fsd f sdf sdfsadfasd ffs",
+      "image": "SamplePic01.jpg",
+      "tag": "Trending"
+    },
+    {
+      "id": 2,
+      "title": "Sample Title 02",
+      "description": "This is a description for SamplePic02.",
+      "image": "SamplePic02.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Sample Title 03",
+      "description": "This is a description for SamplePic03.",
+      "image": "SamplePic03.jpg",
+      "tag": "Recommended"
+    },
+    {
+      "id": 4,
+      "title": "Sample Title 04",
+      "description": "This is a description for SamplePic04.",
+      "image": "SamplePic04.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Sample Title 05",
+      "description": "This is a description for SamplePic05.",
+      "image": "SamplePic05.jpg",
+      "tag": "Ads"
+    },
+    {
+      "id": 6,
+      "title": "Sample Title 06",
+      "description": "This is a description for SamplePic06.",
+      "image": "SamplePic06.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Sample Title 07",
+      "description": "This is a description for SamplePic07.",
+      "image": "SamplePic07.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Sample Title 08",
+      "description": "This is a description for SamplePic08.",
+      "image": "SamplePic08.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Sample Title 09",
+      "description": "This is a description for SamplePic09.",
+      "image": "SamplePic09.jpg",
+      "tag": "Trending"
+    },
+    {
+      "id": 10,
+      "title": "Sample Title 10",
+      "description": "This is a description for SamplePic10.",
+      "image": "SamplePic10.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Sample Title 11",
+      "description": "This is a description for SamplePic11.",
+      "image": "SamplePic11.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Sample Title 12",
+      "description": "This is a description for SamplePic12.",
+      "image": "SamplePic12.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Sample Title 13",
+      "description": "This is a description for SamplePic13.",
+      "image": "SamplePic13.jpg",
+      "tag": "Recommended"
+    },
+    {
+      "id": 14,
+      "title": "Sample Title 14",
+      "description": "This is a description for SamplePic14.",
+      "image": "SamplePic14.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Sample Title 15",
+      "description": "This is a description for SamplePic15.",
+      "image": "SamplePic15.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Sample Title 16",
+      "description": "This is a description for SamplePic16.",
+      "image": "SamplePic16.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Sample Title 17",
+      "description": "This is a description for SamplePic17.",
+      "image": "SamplePic17.jpg",
+      "tag": "Ads"
+    },
+    {
+      "id": 18,
+      "title": "Sample Title 18",
+      "description": "This is a description for SamplePic18.",
+      "image": "SamplePic18.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Sample Title 19",
+      "description": "This is a description for SamplePic19.",
+      "image": "SamplePic19.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Sample Title 20",
+      "description": "This is a description for SamplePic20.",
+      "image": "SamplePic20.jpg"
+    }
+  ]
+  

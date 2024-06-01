@@ -1,12 +1,10 @@
-import Card from "./Component/Card/Card"
-
-function App() {
-
+import React from 'react'
+import CardDrawer from "./Component/CardDrawer/CardDrawer"
+const App = () => {
   return (
-    <>
-     <h1 className="text-6xl">Hello World</h1>
-     <Card />
-    </>
+    <div>
+      <CardDrawer />
+    </div>
   )
 }
 
