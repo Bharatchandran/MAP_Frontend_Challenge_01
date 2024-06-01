@@ -31,33 +31,32 @@ function CardDrawer() {
    
 
      <div className=" h-full w-full flex">
-      
-      <button className=" rounded-md" onClick={scrollLeft}>
-        <span className="material-symbols-outlined">
-          arrow_back_ios
-        </span>
-      </button>
-      
-      <div className="w-full  max-h-[500px] flex gap-4 overflow-x-auto snap-x " ref={containerRef}>
-      
-        {cardData.map((data) => (
-            <Card
-              key={data.id}
-              title={data.title}
-              description={data.description}
-              image={img1}
-              tag={data.tag}
-            />
-          ))
-        }
+        <button className=" rounded-md" onClick={scrollLeft}>
+            <span className="material-symbols-outlined">
+                arrow_back_ios
+            </span>
+        </button>
         
-      </div>
+        <div className="w-full  max-h-[550px] flex gap-4 overflow-x-auto snap-x  " ref={containerRef}>
         
-      <button className=" rounded-md" onClick={scrollRight}>
-        <span className="material-symbols-outlined">
-          arrow_forward_ios
-        </span>
-      </button>
+            {cardData.map((data) => (
+                <Card
+                key={data.id}
+                title={data.title}
+                description={data.description}
+                image={img1}
+                tag={data.tag}
+                />
+            ))
+            }
+            
+        </div>
+            
+        <button className=" rounded-md" onClick={scrollRight}>
+            <span className="material-symbols-outlined">
+            arrow_forward_ios
+            </span>
+        </button>
     </div>
     
   )

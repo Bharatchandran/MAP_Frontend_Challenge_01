@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-const CardTag = ({tag}) => {
+const CardTag = ({tag, isHovered}) => {
     const [selectTag, letSelectTag] = useState({
         color: "",
         icon: ""
@@ -39,11 +39,11 @@ const CardTag = ({tag}) => {
   return (
     <div>
       <div className={`bg-${selectTag.color}-100 text-${selectTag.color}-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-${selectTag.color}-900 dark:text-white flex items-center justify-between`}>
-                     {tag}
-                     <span className="material-symbols-outlined text-lg ml-1">
-                         {selectTag.icon}
-                     </span>
-                 </div>
+            <p className='hidden md:block'>{tag}</p>
+            <span className={`material-symbols-outlined ${isHovered? "text-xs": "text-lg"} ml-1`}>
+                {selectTag.icon}
+            </span>
+      </div>
     </div>
   )
 }
