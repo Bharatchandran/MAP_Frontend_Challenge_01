@@ -20,7 +20,7 @@ const Card = ({title, description, image, tag }) => {
     return (
      
         <div  onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave} className={`relative flex-shrink-0 w-[32%] lg:w-[19.2%] rounded-lg border shadow bg-gray-100 snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
+        onMouseLeave={handleMouseLeave} className={`min-h-20 relative flex-shrink-0 w-[80%] sm:w-[40%] lg:w-[19.2%] rounded-lg border shadow bg-gray-100 snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
             {loading ? 
                 <CardSkelton />
             : 

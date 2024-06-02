@@ -7,9 +7,9 @@ const CardSkelton = () => {
             <div className='rounded-t-lg bg-gray-500'  ></div>
         </div>
         <div>
-            <div class="h-2.5  w-32 mx-2 my-4 bg-gray-200 rounded-full dark:bg-gray-500 "></div>
-            <div class="h-2 mx-2 my-3 bg-gray-200 rounded-full dark:bg-gray-700 "></div>
-            <div class="h-2 mx-2 my-3 bg-gray-200 rounded-full dark:bg-gray-700 "></div>
+            <div className="h-2.5  w-32 mx-2 my-4 bg-gray-200 rounded-full dark:bg-gray-500 "></div>
+            <div className="h-2 mx-2 my-3 bg-gray-200 rounded-full dark:bg-gray-700 "></div>
+            <div className="h-2 mx-2 my-3 bg-gray-200 rounded-full dark:bg-gray-700 "></div>
         </div>
     </div>
   )
