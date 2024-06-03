@@ -19,22 +19,20 @@ const Card = ({title, description, image, tag }) => {
       }, [image]);
     return (
      
-        <div  onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave} className={`min-h-20 relative flex-shrink-0 w-[80%] sm:w-[40%] lg:w-[19.2%] rounded-lg border shadow bg-gray-100 snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
+        <div   className={`min-h-20  relative flex-shrink-0 w-[60%] xs-[50%] sm:w-[40%] lg:w-[30.5%] xl:w-[20%] rounded-lg border shadow bg-gray-100 snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
             {loading ? 
                 <CardSkelton />
             : 
-                <div className=' relative h-full w-full  '>
+                <div onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave} className=' relative h-full w-full flex flex-col  '>
                     <div className={` ${isHovered ? "w-full h-full opacity-20 rounded-lg aspect-w-4 " : "aspect-w-4 aspect-h-5  "} `}>
                         <img className='rounded-t-lg  ' src={image} alt="" />
                     </div>
-                <div className={`${isHovered?"absolute top-12 left-2  ":""} p-3`}>
-                    <h2 className={`${isHovered?" w-full":""} mb-2 text-sm font-bold tracking-tighter text-gray-900 dark:text-black` }>
-                        {title}
-                    </h2>
-                    <p className='text-xs '>
-                        {description.length > 100 ? !isHovered?description.slice(0,100)+"..." : description : description}
-                    </p>
+                <div className={`${isHovered?"absolute  top-12 left-2  ":"overflow-hidden"} p-3 h-[115px] flex flex-wrap  `}>
+                    
+                     <h2 className='mb-2 text-sm font-bold tracking-tighter text-gray-900 dark:text-black'>{title.length > 40  ? !isHovered?title.slice(0,40)+"..." : title.slice(0,50)+"..." : title}</h2>
+                    
+                    <p className='text-xs'>{description.length > 100 ? !isHovered?description.slice(0,80)+"..." : description.slice(0,150)+"..." : description} </p>
                 </div> 
                     {
                         tag?
@@ -44,6 +42,8 @@ const Card = ({title, description, image, tag }) => {
                         :""
                     }
                 </div>
+               
+
                 
             }
 
