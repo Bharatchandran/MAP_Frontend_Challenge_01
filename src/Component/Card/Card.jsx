@@ -17,13 +17,9 @@ const Card = ({id,title, description, image, tag }) => {
     }; 
     const handleMarkForLater = (cardId) => {
         dispatch(markForLater(cardId))
-        // console.log(marked.marked);
-        // marked.marked.map(mark => console.log(mark))
     }
     const handleRemoveMarkForLater = (cardId) => {
         dispatch(removeMarkedForLater(cardId))
-        console.log(marked.marked);
-        marked.marked.map(mark => console.log(mark))
     }
     useEffect(() => {
         const img = new Image();
@@ -31,80 +27,72 @@ const Card = ({id,title, description, image, tag }) => {
         img.onload = () => {
           setTimeout(() => setLoading(false), 1000); // Delay for 1 second
         };
-      }, [image]);
+    }, [image]);
     return (
-     
-        <div   className={`min-h-20  relative flex-shrink-0 w-[60%] xs-[50%] sm:w-[40%] lg:w-[30.5%] xl:w-[20%] rounded-lg border shadow bg-gray-100 snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
+        <div className={`  relative flex-shrink-0 w-[60%] xs-[50%] sm:w-[40%] lg:w-[30.5%] xl:w-[20%] rounded-lg border shadow bg-gray-100 snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
             {loading ? 
                 <CardSkelton />
             : 
-                <div onMouseEnter={handleMouseEnter}
-                onMouseLeave={handleMouseLeave} className=' relative h-full w-full flex flex-col  '>
-                    <div className={` ${isHovered ? "w-full h-full opacity-20 rounded-lg aspect-w-4 " : "aspect-w-4 aspect-h-5  "} `}>
+                <div 
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave} 
+                className=' relative h-full w-full flex flex-col  '
+                >
+                    <div className={` ${isHovered ? "w-full aspect-h-6 opacity-20 rounded-lg aspect-w-4 " : "aspect-w-4 aspect-h-5  "} `}>
                         <img className='rounded-t-lg  ' src={image} alt="" />
                     </div>
-                <div className={`${isHovered?"absolute  top-12 left-2  ":"overflow-hidden"} p-3 h-[115px] flex flex-wrap  `}>
-                    
-                     <h2 className='mb-2 text-sm font-bold tracking-tighter text-gray-900 dark:text-black'>{title.length > 40  ? !isHovered?title.slice(0,40)+"..." : title.slice(0,50)+"..." : title}</h2>
-                    
-                    <p className='text-xs'>{description.length > 100 ? !isHovered?description.slice(0,80)+"..." : description.slice(0,150)+"..." : description} </p>
-                </div> 
+                    <div className={`${isHovered?"absolute  top-12 left-2  ":"overflow-hidden"} p-3  flex flex-wrap  `}>
+                        <h2 className='mb-2 text-sm font-bold tracking-tighter text-gray-900 dark:text-black'>
+                            {title.length > 40  ? !isHovered?title.slice(0,40)+"..." : title.slice(0,50)+"..." : title}
+                        </h2>
+                        <p className='text-xs'>
+                            {description.length > 100 ? !isHovered?description.slice(0,80)+"..." : description.slice(0,150)+"..." : description} 
+                        </p>
+                    </div> 
                     {
-                        tag?
+                        tag ?
                             <div className={`absolute top-2 right-0 `}>
                                 <CardTag tag={tag} isHovered={isHovered} />
                             </div>
-                            // <div className={`absolute ${isHovered?"top-5 left-4" : "top-2 right-0"} `}>
-                            //     <CardTag tag={tag} isHovered={isHovered} />
-                            // </div>
-                        :""
+                            
+                        : ""
                     }
                     {
-                        isHovered ?  <div className="absolute">
-                            { marked.some(el => el.markedId === id) ? 
-                             <button onClick={() => handleRemoveMarkForLater(id)} className="text-blue-700   text-4xl material-symbols-outlined">
-                             bookmark
-                        </button>
-                            :
-                            <button onClick={() => handleMarkForLater(id)} className="text-white fill-blue-700  text-4xl material-symbols-outlined">
-                                 bookmark
-                            </button>
-                            
-
-                            }
-                       
-                        </div>
-                    :
-                    <div className={`absolute `}>
-                    { marked.some(el => el.markedId === id) ? 
-                             <button  className="text-blue-700   text-4xl material-symbols-outlined">
-                             bookmark
-                        </button>
-                            :
-                            <button  className="text-white fill-blue-700  text-4xl material-symbols-outlined">
-                                 bookmark
-                            </button>
-                            
-
-                            }
-                    </div>
-
+                        isHovered ?  
+                            <div className="absolute">
+                                { marked.some(el => el.markedId === id) ? 
+                                    <button 
+                                    onClick={() => handleRemoveMarkForLater(id)} 
+                                    className="text-blue-700   text-4xl material-symbols-outlined"
+                                    >
+                                        bookmark
+                                    </button>
+                                :
+                                    <button 
+                                    onClick={() => handleMarkForLater(id)} 
+                                    className="text-white fill-blue-700  text-4xl material-symbols-outlined">
+                                        bookmark
+                                    </button>
+                                }
+                        
+                            </div>
+                        :
+                            <div className={`absolute `}>
+                                { 
+                                    marked.some(el => el.markedId === id) ? 
+                                        <button  className="text-blue-700   text-4xl material-symbols-outlined">
+                                            bookmark
+                                        </button>
+                                    :
+                                        <button  className="text-white fill-blue-700  text-4xl material-symbols-outlined">
+                                            bookmark
+                                        </button>
+                                }
+                            </div>
                     }
-                    {/* <div className={`absolute ${isHovered ? "bottom-0":""}`}>
-                    <span class="text-white text-4xl material-symbols-outlined">
-                        bookmark
-                    </span>
-                    </div> */}
                 </div>
-               
-
-                
             }
-
-
-        
         </div>
-    
   )
 }
 

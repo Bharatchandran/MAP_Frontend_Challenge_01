@@ -9,7 +9,7 @@ const App = () => {
   const [markedForLater, setMarkedForLater] = useState([])
   const [showMarkedActive, setShowMarkedActive] = useState(false)
   return (
-   <div className='min-h-screen bg-gray-900'>1
+   <div className='min-h-screen  bg-gray-900'>
    <NavBar showMarkedActive={showMarkedActive} setShowMarkedActive={setShowMarkedActive} />
    <CardDrawer showMarkedActive={showMarkedActive} />
    </div>
