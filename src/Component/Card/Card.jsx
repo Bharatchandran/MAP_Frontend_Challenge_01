@@ -1,15 +1,30 @@
 import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import CardTag from '../CardTag/CardTag'
 import CardSkelton from '../CarkSkelton/CardSkelton'
-const Card = ({title, description, image, tag }) => {
+import { markForLater, removeMarkedForLater } from '../../store/markerSlice'
+
+const Card = ({id,title, description, image, tag }) => {
     const [loading, setLoading] = useState(true)
     const [isHovered, setIsHovered] = useState(false);
+    const dispatch = useDispatch()
+    const marked = useSelector(state => state.markedForLater.marked)
     const handleMouseEnter = () => {
         setIsHovered(true);
     };
     const handleMouseLeave = () => {
         setIsHovered(false);
-    };
+    }; 
+    const handleMarkForLater = (cardId) => {
+        dispatch(markForLater(cardId))
+        // console.log(marked.marked);
+        // marked.marked.map(mark => console.log(mark))
+    }
+    const handleRemoveMarkForLater = (cardId) => {
+        dispatch(removeMarkedForLater(cardId))
+        console.log(marked.marked);
+        marked.marked.map(mark => console.log(mark))
+    }
     useEffect(() => {
         const img = new Image();
         img.src = image;
@@ -36,11 +51,50 @@ const Card = ({title, description, image, tag }) => {
                 </div> 
                     {
                         tag?
-                            <div className={`absolute ${isHovered?"top-5 left-4" : "top-2 right-0"} `}>
+                            <div className={`absolute top-2 right-0 `}>
                                 <CardTag tag={tag} isHovered={isHovered} />
                             </div>
+                            // <div className={`absolute ${isHovered?"top-5 left-4" : "top-2 right-0"} `}>
+                            //     <CardTag tag={tag} isHovered={isHovered} />
+                            // </div>
                         :""
                     }
+                    {
+                        isHovered ?  <div className="absolute">
+                            { marked.some(el => el.markedId === id) ? 
+                             <button onClick={() => handleRemoveMarkForLater(id)} className="text-blue-700   text-4xl material-symbols-outlined">
+                             bookmark
+                        </button>
+                            :
+                            <button onClick={() => handleMarkForLater(id)} className="text-white fill-blue-700  text-4xl material-symbols-outlined">
+                                 bookmark
+                            </button>
+                            
+
+                            }
+                       
+                        </div>
+                    :
+                    <div className={`absolute `}>
+                    { marked.some(el => el.markedId === id) ? 
+                             <button  className="text-blue-700   text-4xl material-symbols-outlined">
+                             bookmark
+                        </button>
+                            :
+                            <button  className="text-white fill-blue-700  text-4xl material-symbols-outlined">
+                                 bookmark
+                            </button>
+                            
+
+                            }
+                    </div>
+
+                    }
+                    {/* <div className={`absolute ${isHovered ? "bottom-0":""}`}>
+                    <span class="text-white text-4xl material-symbols-outlined">
+                        bookmark
+                    </span>
+                    </div> */}
                 </div>
                
 
