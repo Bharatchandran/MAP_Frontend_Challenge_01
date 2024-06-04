@@ -10,25 +10,25 @@ const CardTag = ({tag, isHovered}) => {
         switch (tag) {
             case 'Recommended':
                 letSelectTag({
-                    color: "green",
+                    className: "dark:bg-green-900 ",
                     icon: "reviews"
                 })
                 break
             case 'Trending':
                 letSelectTag({
-                    color: "red",
+                    className: "dark:bg-red-900",
                     icon: "trending_up"
                 })
                 break
             case 'Ads':
                 letSelectTag({
-                    color: "yellow",
+                    className: "dark:bg-red-900",
                     icon: "sell"
                 })
                 break
             default:
                 letSelectTag({
-                    color: "blue",
+                    className: "dark:bg-red-900",
                     icon: ""
                 })
                 
@@ -39,9 +39,7 @@ const CardTag = ({tag, isHovered}) => {
     
   return (
     <div>
-      <div className={`bg-${selectTag.color}-100 text-${selectTag.color}-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-${selectTag.color}-900 dark:text-white flex items-center justify-between z-20`}>
-      
-
+      <div className={` text-xs font-medium me-2 px-2.5 py-0.5 rounded-full ${selectTag.className} dark:text-white flex items-center justify-between z-20`}>
             <p className='hidden md:block'>{tag}</p>
             <span className={`material-symbols-outlined ${isHovered? "text-xs": "text-lg"} ml-1`}>
                 {selectTag.icon}

@@ -41,7 +41,7 @@ const Card = ({id,title, description, image, tag }) => {
                     <div className={` ${isHovered ? "w-full aspect-h-6 opacity-20 rounded-lg aspect-w-4 " : "aspect-w-4 aspect-h-5  "} `}>
                         <img className='rounded-t-lg  ' src={image} alt="" />
                     </div>
-                    <div className={`${isHovered?"absolute  top-12 left-2  ":"overflow-hidden"} p-3  flex flex-wrap  `}>
+                    <div className={`${isHovered?"absolute  top-12 left-2  ":"overflow-hidden"} p-3  flex flex-col flex-wrap  `}>
                         <h2 className='mb-2 text-sm font-bold tracking-tighter text-gray-900 dark:text-black'>
                             {title.length > 40  ? !isHovered?title.slice(0,40)+"..." : title.slice(0,50)+"..." : title}
                         </h2>
