@@ -39,13 +39,13 @@ function CardDrawer({showMarkedActive}) {
     <div 
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave} 
-    className=" h-3/4 w-full flex items-center justify-center p-24" 
+    className="relative h-3/4 w-full flex items-center justify-center p-24  " 
     >
       {
         drawerHover ?
           <div> 
             <button 
-            className=" opacity-25 hover:opacity-75 h-10 w-10 bg-black absolute z-10 left-10  rounded-md flex items-center justify-center" 
+            className=" opacity-25 hover:opacity-75 h-10 w-10 bg-black absolute z-10 left-10   rounded-md flex items-center justify-center" 
             onClick={scrollLeft}
             >
               <span className="material-symbols-outlined text-white">
@@ -53,7 +53,7 @@ function CardDrawer({showMarkedActive}) {
               </span>
             </button>
             <button 
-            className=" opacity-25 hover:opacity-75 h-10 w-10 bg-black absolute z-10 right-10 rounded-md flex items-center justify-center" 
+            className=" opacity-25 hover:opacity-75 h-10 w-10 bg-black absolute z-10 right-10 rounded-md flex items-center justify-center " 
             onClick={scrollRight}
             >
                 <span className="text-white material-symbols-outlined">
@@ -67,7 +67,7 @@ function CardDrawer({showMarkedActive}) {
         
         
         <div 
-        className="w-full  p-4 flex gap-4 overflow-x-auto overflow-y-hidden" 
+        className="w-full  p-12 flex gap-4 overflow-x-auto overflow-y-hidden" 
         ref={containerRef}
         >
           {showMarkedActive ? 

@@ -29,7 +29,7 @@ const Card = ({id,title, description, image, tag }) => {
         };
     }, [image]);
     return (
-        <div className={`  relative flex-shrink-0 w-[60%] xs-[50%] sm:w-[40%] lg:w-[30.5%] xl:w-[20%] rounded-lg border shadow bg-gray-100 snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
+        <div className={`  relative flex-shrink-0 w-[60%] xs-[50%] sm:w-[40%] lg:w-[30.5%] xl:w-[20%] rounded-lg text-[#DEE4EA] dark:text-[#101214] border-black  shadow bg-[#161A1D] dark:bg-[#DEE4EA] snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
             {loading ? 
                 <CardSkelton />
             : 
@@ -41,25 +41,25 @@ const Card = ({id,title, description, image, tag }) => {
                     <div className={` ${isHovered ? "w-full aspect-h-6 opacity-20 rounded-lg aspect-w-4 " : "aspect-w-4 aspect-h-5  "} `}>
                         <img className='rounded-t-lg  ' src={image} alt="" />
                     </div>
-                    <div className={`${isHovered?"absolute  top-12 left-2  ":"overflow-hidden"} p-3  flex flex-col flex-wrap  `}>
-                        <h2 className='mb-2 text-sm font-bold tracking-tighter text-gray-900 dark:text-black'>
+                    <div className={`${isHovered?"absolute  top-14 left-2  ":"overflow-hidden"} p-3  flex flex-col flex-wrap    `}>
+                        <h2 className={`${isHovered?"text-4xl ":"text-lg"}  mb-2  font-bold tracking-tighter font-roboto  `}>
                             {title.length > 40  ? !isHovered?title.slice(0,40)+"..." : title.slice(0,50)+"..." : title}
                         </h2>
-                        <p className='text-xs'>
+                        <p className={`${isHovered?"text-xl ":"text-sm"} font-roboto `}>
                             {description.length > 100 ? !isHovered?description.slice(0,80)+"..." : description.slice(0,150)+"..." : description} 
                         </p>
                     </div> 
                     {
                         tag ?
-                            <div className={`absolute top-2 right-0 `}>
-                                <CardTag tag={tag} isHovered={isHovered} />
+                            <div className={`absolute top-2 right-2 `}>
+                                <CardTag tag={tag}  />
                             </div>
                             
                         : ""
                     }
                     {
                         isHovered ?  
-                            <div className="absolute">
+                            <div className="absolute left-2 top-2 ">
                                 { marked.some(el => el.markedId === id) ? 
                                     <button 
                                     onClick={() => handleRemoveMarkForLater(id)} 
@@ -77,7 +77,7 @@ const Card = ({id,title, description, image, tag }) => {
                         
                             </div>
                         :
-                            <div className={`absolute `}>
+                            <div className={`absolute left-2 top-2 `}>
                                 { 
                                     marked.some(el => el.markedId === id) ? 
                                         <button  className="text-blue-700   text-4xl material-symbols-outlined">
