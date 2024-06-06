@@ -5,7 +5,7 @@ import CardSkelton from '../CarkSkelton/CardSkelton'
 import { markForLater, removeMarkedForLater } from '../../store/markerSlice'
 
 const Card = ({id,title, description, image, tag }) => {
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(false)
     const [isHovered, setIsHovered] = useState(false);
     const dispatch = useDispatch()
     const marked = useSelector(state => state.markedForLater.marked)
@@ -24,12 +24,14 @@ const Card = ({id,title, description, image, tag }) => {
     useEffect(() => {
         const img = new Image();
         img.src = image;
+        
         img.onload = () => {
           setTimeout(() => setLoading(false), 1000); // Delay for 1 second
         };
     }, [image]);
+    
     return (
-        <div className={`  relative flex-shrink-0 w-[60%] xs-[50%] sm:w-[40%] lg:w-[30.5%] xl:w-[20%] rounded-lg text-[#DEE4EA] dark:text-[#101214] border-black  shadow bg-[#161A1D] dark:bg-[#DEE4EA] snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
+        <div className={`  relative flex-shrink-0 w-[60%] xs-[50%] sm:w-[40%] lg:w-[30.5%] xl:w-[19%] rounded-lg text-[#DEE4EA] dark:text-[#101214] border-black  shadow bg-[#161A1D] dark:bg-[#DEE4EA] snap-center ${loading? "animate-pulse":""}  transition-transform duration-300 transform hover:scale-105  `}>
             {loading ? 
                 <CardSkelton />
             : 
@@ -38,10 +40,11 @@ const Card = ({id,title, description, image, tag }) => {
                 onMouseLeave={handleMouseLeave} 
                 className=' relative h-full w-full flex flex-col  '
                 >
-                    <div className={` ${isHovered ? "w-full aspect-h-6 opacity-20 rounded-lg aspect-w-4 " : "aspect-w-4 aspect-h-5  "} `}>
-                        <img className='rounded-t-lg  ' src={image} alt="" />
+                    <div className={` ${isHovered ? "w-full h-full opacity-20 rounded-lg aspect-w-4 " : "aspect-w-4 aspect-h-5  "} `}>
+                        <img className='rounded-t-lg  ' src={`src/assets/${image}`} onError={(e) => e.target.src ="src/assets/SamplePic01.jpg"}  alt="" />
+                        
                     </div>
-                    <div className={`${isHovered?"absolute  top-14 left-2  ":"overflow-hidden"} p-3  flex flex-col flex-wrap    `}>
+                     <div className={`${isHovered?"absolute  top-12 left-2  ":"overflow-hidden"} p-3  flex flex-wrap h-[120px]  `}>
                         <h2 className={`${isHovered?"text-4xl ":"text-lg"}  mb-2  font-bold tracking-tighter font-roboto  `}>
                             {title.length > 40  ? !isHovered?title.slice(0,40)+"..." : title.slice(0,50)+"..." : title}
                         </h2>

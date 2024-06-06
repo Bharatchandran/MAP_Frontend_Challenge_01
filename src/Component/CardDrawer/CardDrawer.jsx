@@ -1,7 +1,7 @@
 import { useRef, useState } from "react"
 import cardData from "../../cardData.json"
 import Card from "../Card/Card";
-import img1 from "../../assets/IMG_7660.JPG"
+import img1 from "../../assets/SamplePic02.jpeg"
 import { useSelector } from "react-redux";
 function CardDrawer({showMarkedActive}) {
   const [drawerHover, setDrawerHover] = useState(false)
@@ -39,7 +39,7 @@ function CardDrawer({showMarkedActive}) {
     <div 
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave} 
-    className="relative h-3/4 w-full flex items-center justify-center p-24  " 
+    className="relative  w-full flex items-center justify-center p-12  " 
     >
       {
         drawerHover ?
@@ -88,7 +88,7 @@ function CardDrawer({showMarkedActive}) {
                   id={data.id}
                   title={data.title}
                   description={data.description}
-                  image={img1}
+                  image={data.image}
                   tag={data.tag}
                 /> )
           }

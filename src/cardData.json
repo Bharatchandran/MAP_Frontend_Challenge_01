@@ -1,128 +1,128 @@
 [
     {
       "id": 1,
-      "title": "Sample Title 01SamplTitle 01SamplTitle 01SampleSample Title 01SampleSample Title 01SampleSample Title 01SampleSample Title 01Sample ",
-      "description": "This is a description for SamplePic01This is a description for SamplePic01.This is a description for SamplePic01.  ",
+      "title": "Apple iPad Air (5th Generation) ",
+      "description": "M1 chip, 27.69 cm (10.9″) Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue  ",
       "image": "SamplePic01.jpg",
       "tag": "Trending"
     },
     {
       "id": 2,
-      "title": "Sample Title 02",
-      "description": "This is a description for SamplePic02.",
+      "title": "Apple iPad Pro 11″ (M4)",
+      "description": "Ultra Retina XDR Display, 256GB, Landscape 12MP Front Camera / 12MP Back Camera, LiDAR Scanner, Wi-Fi 6E, Face ID, All-Day Battery Life, Standard Glass — Space Black",
       "image": "SamplePic02.jpg"
     },
     {
       "id": 3,
-      "title": "Sample Title 03",
-      "description": "This is a description for SamplePic03.",
+      "title": "Apple iPhone 15 Pro Max (256 GB) - Natural Titanium",
+      "description": "Apple iPhone 15 Pro Max (256 GB) - Natural Titanium",
       "image": "SamplePic03.jpg",
       "tag": "Recommended"
     },
     {
       "id": 4,
-      "title": "Sample Title 04",
-      "description": "This is a description for SamplePic04.",
+      "title": "Apple 2023 MacBook Pro ",
+      "description": "(14-inch, M3 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 512GB) - Space Grey",
       "image": "SamplePic04.jpg"
     },
     {
       "id": 5,
-      "title": "Sample Title 05",
-      "description": "This is a description for SamplePic05.",
+      "title": "Apple 2023 iMac",
+      "description": "(24-inch, M3 chip with 8‑core CPU and 8‑core GPU, 8GB Unified Memory, 256GB) - Green",
       "image": "SamplePic05.jpg",
       "tag": "Ads"
     },
     {
       "id": 6,
-      "title": "Sample Title 06",
-      "description": "This is a description for SamplePic06.",
+      "title": "Samsung Galaxy Book4 Pro ",
+      "description": "(Moonstone Gray, 16GB RAM, 512GB SSD)| 14 Dynamic AMOLED 2X Touchscreen| Intel Core Ultra 5 125H Processor| Windows 11 Home",
       "image": "SamplePic06.jpg"
     },
     {
       "id": 7,
-      "title": "Sample Title 07",
-      "description": "This is a description for SamplePic07.",
+      "title": "Samsung Galaxy S24 Ultra 5G ",
+      "description": "AI Smartphone (Titanium Black, 12GB, 256GB Storage)",
       "image": "SamplePic07.jpg"
     },
     {
       "id": 8,
-      "title": "Sample Title 08",
-      "description": "This is a description for SamplePic08.",
+      "title": "Samsung Galaxy Tab S9",
+      "description": "27.81 cm (11 inch) Dynamic AMOLED 2X Display, RAM 12 GB, ROM 256 GB Expandable, S Pen in-Box, Wi-Fi Tablet, Gray",
       "image": "SamplePic08.jpg"
     },
     {
       "id": 9,
-      "title": "Sample Title 09",
-      "description": "This is a description for SamplePic09.",
+      "title": "Razer Blade 15",
+      "description": "Advanced Gaming Laptop 2021, Intel Core I7-11800H 8-Core, Nvidia Geforce Rtx 3060, 15.6 Inches Qhd 240Hz, 16Gb Ram, 1Tb Ssd, Windows 10 Home",
       "image": "SamplePic09.jpg",
       "tag": "Trending"
     },
     {
       "id": 10,
-      "title": "Sample Title 10",
-      "description": "This is a description for SamplePic10.",
+      "title": "Sony PlayStation®5 Console (slim)",
+      "description": "Slim Design: With PS5, players get powerful gaming technology packed inside a sleek and compact console design. 1TB of Storage: Keep your favorite games ready and waiting for you to jump in and play with 1TB of SSD storage built in. Ultra-High Speed SSD: Maximize your play sessions with near instant load times for installed PS5 games.",
       "image": "SamplePic10.jpg"
     },
     {
       "id": 11,
-      "title": "Sample Title 11",
-      "description": "This is a description for SamplePic11.",
+      "title": "Logitech MX Keys S",
+      "description": "Wireless Keyboard, Low Profile, Fluid Precise Quiet Typing, Programmable Keys, Backlighting, Bluetooth, USB C Rechargeable, for Windows...",
       "image": "SamplePic11.jpg"
     },
     {
       "id": 12,
-      "title": "Sample Title 12",
-      "description": "This is a description for SamplePic12.",
+      "title": "Logitech MX Master 3S",
+      "description": "Wireless Performance Mouse with Ultra-Fast Scrolling, Ergo, 8K DPI, Track on Glass, Quiet Clicks, USB-C, Bluetooth, Windows, Linux,...",
       "image": "SamplePic12.jpg"
     },
     {
       "id": 13,
-      "title": "Sample Title 13",
-      "description": "This is a description for SamplePic13.",
+      "title": "Samsung 43-inch (107.99cm) M7 4K UHD Smart LED Monitor ",
+      "description": "M7 4K UHD Smart LED Monitor, Type-C, Smart TV apps, 1 Billion Color, TV Plus, Apple Airplay, Dex, Office 365, BT, IOT, Speakers,...",
       "image": "SamplePic13.jpg",
       "tag": "Recommended"
     },
     {
       "id": 14,
-      "title": "Sample Title 14",
-      "description": "This is a description for SamplePic14.",
+      "title": "BenQ MOBIUZ EX3210U 32 4K UHD IPS Gaming Monitor",
+      "description": "32 4K UHD IPS Gaming Monitor| 144Hz| 1ms MPRT| PS5 Compatible| FreeSync Premium Pro| HDMI 2.1| 98% DCI-P3| treVolo Speakers (2W x....",
       "image": "SamplePic14.jpg"
     },
     {
       "id": 15,
-      "title": "Sample Title 15",
-      "description": "This is a description for SamplePic15.",
+      "title": "Logitech MX Brio",
+      "description": "Ultra HD 4K Streaming Webcam, 1080p at 60 FPS, USB-C, Webcam Cover, Works with Microsoft Teams, Zoom, Google Meet - Graphite - With Free...",
       "image": "SamplePic15.jpg"
     },
     {
       "id": 16,
-      "title": "Sample Title 16",
-      "description": "This is a description for SamplePic16.",
+      "title": "Anker PowerConf S500 ",
+      "description": "Speakerphone with Zoom Rooms Certification, USB-C Conference Speaker, Bluetooth Speakerphone for Conference Room, Conference Microphone...",
       "image": "SamplePic16.jpg"
     },
     {
       "id": 17,
-      "title": "Sample Title 17",
-      "description": "This is a description for SamplePic17.",
+      "title": "Marshall Emberton II ",
+      "description": "20 W Wireless Bluetooth Portable Outdoor Speaker (Black & Brass)",
       "image": "SamplePic17.jpg",
       "tag": "Ads"
     },
     {
       "id": 18,
-      "title": "Sample Title 18",
-      "description": "This is a description for SamplePic18.",
+      "title": "Marshall Tufton",
+      "description": "80 Watt Wireless Bluetooth Portable Speaker (Black & Brass)",
       "image": "SamplePic18.jpg"
     },
     {
       "id": 19,
-      "title": "Sample Title 19",
-      "description": "This is a description for SamplePic19.",
+      "title": "Apple Watch Series 9",
+      "description": "[GPS 41mm] Smartwatch with Midnight Aluminum Case with Midnight Sport Band S/M. Fitness Tracker, Blood Oxygen & ECG Apps, Always-On...",
       "image": "SamplePic19.jpg"
     },
     {
       "id": 20,
-      "title": "Sample Title 20",
-      "description": "This is a description for SamplePic20.",
+      "title": "Apple Watch Ultra ",
+      "description": "[GPS + Cellular 49 mm] smart watch w/Rugged Titanium Case & Black/Grey Trail Loop - M/L Fitness Tracker, Precision GPS, Action Button,...",
       "image": "SamplePic20.jpg"
     }
   ]
