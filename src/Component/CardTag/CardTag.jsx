@@ -22,7 +22,7 @@ const CardTag = ({tag}) => {
                 break
             case 'Ads':
                 letSelectTag({
-                    className: "bg-red-900",
+                    className: "bg-yellow-600",
                     icon: "sell"
                 })
                 break

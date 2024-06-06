@@ -1,16 +1,17 @@
 [
     {
-      "id": 1,
-      "title": "Apple iPad Air (5th Generation) ",
-      "description": "M1 chip, 27.69 cm (10.9″) Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue  ",
-      "image": "SamplePic01.jpg",
-      "tag": "Trending"
+    "id": 1,
+    "title": "Apple iPad Air (5th Generation) ",
+    "description": "M1 chip, 27.69 cm (10.9″) Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue  ",
+    "image": "SamplePic01.jpg",
+    "tag": "Trending"
     },
     {
       "id": 2,
       "title": "Apple iPad Pro 11″ (M4)",
       "description": "Ultra Retina XDR Display, 256GB, Landscape 12MP Front Camera / 12MP Back Camera, LiDAR Scanner, Wi-Fi 6E, Face ID, All-Day Battery Life, Standard Glass — Space Black",
-      "image": "SamplePic02.jpg"
+      "image": "SamplePic02.jpg",
+      "tag": "Trending"
     },
     {
       "id": 3,
@@ -23,20 +24,22 @@
       "id": 4,
       "title": "Apple 2023 MacBook Pro ",
       "description": "(14-inch, M3 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 512GB) - Space Grey",
-      "image": "SamplePic04.jpg"
+      "image": "SamplePic04.jpg",
+      "tag": "Ads"
     },
     {
       "id": 5,
       "title": "Apple 2023 iMac",
       "description": "(24-inch, M3 chip with 8‑core CPU and 8‑core GPU, 8GB Unified Memory, 256GB) - Green",
       "image": "SamplePic05.jpg",
-      "tag": "Ads"
+      "tag": "Recommended"
     },
     {
       "id": 6,
       "title": "Samsung Galaxy Book4 Pro ",
       "description": "(Moonstone Gray, 16GB RAM, 512GB SSD)| 14 Dynamic AMOLED 2X Touchscreen| Intel Core Ultra 5 125H Processor| Windows 11 Home",
-      "image": "SamplePic06.jpg"
+      "image": "SamplePic06.jpg",
+      "tag": "Trending"
     },
     {
       "id": 7,
@@ -55,7 +58,7 @@
       "title": "Razer Blade 15",
       "description": "Advanced Gaming Laptop 2021, Intel Core I7-11800H 8-Core, Nvidia Geforce Rtx 3060, 15.6 Inches Qhd 240Hz, 16Gb Ram, 1Tb Ssd, Windows 10 Home",
       "image": "SamplePic09.jpg",
-      "tag": "Trending"
+      "tag": "Ads"
     },
     {
       "id": 10,
@@ -113,6 +116,7 @@
       "description": "80 Watt Wireless Bluetooth Portable Speaker (Black & Brass)",
       "image": "SamplePic18.jpg"
     },
+  
     {
       "id": 19,
       "title": "Apple Watch Series 9",
