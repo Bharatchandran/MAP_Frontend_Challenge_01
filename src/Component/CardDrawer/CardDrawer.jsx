@@ -66,7 +66,7 @@ function CardDrawer({showMarkedActive}) {
         
         
         <div 
-        className="w-full    p-12 flex gap-4 overflow-x-auto overflow-y-hidden" 
+        className="w-full    p-12 flex gap-4 overflow-x-hidden overflow-y-hidden " 
         ref={containerRef}
         >
           {showMarkedActive ? 

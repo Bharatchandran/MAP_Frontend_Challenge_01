@@ -28,7 +28,7 @@ const Card = ({id,title, description, image, tag }) => {
         const img = new Image();
         img.src = `src/assets/images/${image}`;
         img.onload = () => {
-          setTimeout(() => setLoading(false), 1000); // Delay for 1 second
+          setTimeout(() => setLoading(false), 1500); // Delay for 1 second
         };
     }, [image]);
     

@@ -20,10 +20,11 @@ const NavBar = ({showMarkedActive, setShowMarkedActive}) => {
     
     <nav className="flex relative justify-between bg-[#FFFFFF] dark:bg-[#091E42] text-[#091E42] dark:text-[#F7F8F9] w-screen h-16 p-10">
       <div className="px-5 xl:px-12  flex w-full items-center">
-        <div className="text-3xl font-bold font-heading font-lobster tracking-widest " href="#">
+        <div className="hidden sm:block text-3xl font-bold font-heading font-lobster tracking-widest " href="#">
           CHALLENGE
         </div>
-        <div className="hidden absolute left-0 right-0 mx-auto w-[200px] md:flex px-4  font-semibold font-heading space-x-12  ">
+        <div className="sm:hidden text-3xl font-bold font-heading font-lobster tracking-widest ">PRJ</div>
+        <div className=" absolute left-0 right-0 mx-auto w-[200px] md:flex px-4  font-semibold font-heading space-x-12  ">
             <button 
             className={`hover:text-red-500 ${!showMarkedActive?"text-red-500":" "} transition-transform duration-300 transform hover:scale-125`}
             onClick={() => setShowMarkedActive(false)}

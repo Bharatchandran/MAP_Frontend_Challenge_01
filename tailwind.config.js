@@ -9,9 +9,7 @@ export default {
     
     extend: {
       
-      aspectRatio: {
-        '4/3': '4 / 3',
-      },
+      
       fontFamily: {
         lobster: ["Lobster", 'sans-serif'],
         roboto: ["Roboto", "sans-serif"]
