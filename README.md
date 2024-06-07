@@ -69,45 +69,6 @@
     npm i react-redux
     ```
 
-<div style="display: flex;">
-    <div> 
-        <div style=" padding: 5px;">
-            <h3>Light mode</h3>
-            <img src="README_Assets/LightMode.png" alt="Light Theme" style="width: 100%;">
-        </div>
-        <div style=" padding: 5px;">
-            <h3>Loading screen</h3>
-            <img src="README_Assets/loading.png" alt="Loading" style="width: 100%;">
-        </div>
-        <div style=" padding: 5px;">
-            <h3>Hover card</h3>
-            <img src="README_Assets/hover_on_cardLightMode.png" alt="Hover on card" style="width: 100%;">
-        </div>
-        <div style=" padding: 5px;">
-            <h3>Saved for later (Home Screen)</h3>
-            <img src="README_Assets/savedHomePage.png" alt="Saved for later (Home Screen)" style="width: 100%;">
-        </div>
-    </div>
-    <div>
-        <div style=" padding: 5px;">
-            <h3>Dark mode</h3>
-            <img src="README_Assets/DarkMode.png" alt="Dark Theme" style="width: 100%;">
-        </div>
-        <div style=" padding: 5px;">
-            <h3>Cursor on card drawer</h3>
-            <img src="README_Assets/cursor_on_card_drawer.png" alt="Hover card drawer" style="width: 100%;">
-        </div>
-        <div style=" padding: 5px;">
-            <h3>Collection of saved for later</h3>
-            <img src="README_Assets/Saved_For_Later.png" alt="Saved For Later" style="width: 100%;">
-        </div>
-        <div style=" padding: 5px; display:flex; justify-content: center; align-items: center; flex-direction: column;" >
-            <h3>Responsive</h3>
-            <img src="README_Assets/responsive.png" alt="Responsive" style="width: 48%; ">
-        </div>
-    </div>
-</div>
-
 ## Screenshots
 ### Light mode
 ![Light Theme](README_Assets/LightMode.png)
